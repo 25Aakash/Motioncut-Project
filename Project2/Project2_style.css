@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider-image {
+    min-width: 100%;
+    border-radius: 10px;
+}
+
+.navigation {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.nav-button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.caption {
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
