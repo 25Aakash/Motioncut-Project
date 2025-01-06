@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorer's Hub - Travel Destination Guide</title>
+    <link rel="stylesheet" href="Project4_style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>Explorer's Hub</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#attractions">Top Attractions</a></li>
+                <li><a href="#map">Interactive Map</a></li>
+                <li><a href="#tips">Local Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <img src="paris_hero.jpg" alt="Beautiful view of Paris" />
+            <div class="hero-text">
+                <h2>Welcome to Paris</h2>
+                <p>Discover the beauty and charm of the City of Lights.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="attractions">
+        <h2>Top Attractions</h2>
+        <div class="attraction-grid">
+            <div class="attraction">
+                <img src="eiffel_tower.jpg" alt="Eiffel Tower">
+                <h3>Eiffel Tower</h3>
+                <p>The iconic symbol of Paris, offering breathtaking views from its summit.</p>
+                <p><strong>Opening Hours:</strong> 9 AM - 12 AM</p>
+                <p><strong>Ticket Price:</strong> €25</p>
+            </div>
+            <div class="attraction">
+                <img src="louvre_museum.jpeg" alt="Louvre Museum">
+                <h3>Louvre Museum</h3>
+                <p>The world's largest art museum and a historic monument in Paris.</p>
+                <p><strong>Opening Hours:</strong> 9 AM - 6 PM</p>
+                <p><strong>Ticket Price:</strong> €17</p>
+            </div>
+            <div class="attraction">
+                <img src="notre_dam.png" alt="Notre Dame Cathedral">
+                <h3>Notre Dame Cathedral</h3>
+                <p>A masterpiece of French Gothic architecture, located on the Île de la Cité.</p>
+                <p><strong>Opening Hours:</strong> 7:45 AM - 6:45 PM</p>
+                <p><strong>Ticket Price:</strong> Free (entry to the tower is €10)</p>
+            </div>
+            <div class="attraction">
+                <img src="sacre_coeur.jpg" alt="Sacré-Cœur Basilica">
+                <h3>Sacré-Cœur Basilica</h3>
+                <p>Perched atop Montmartre, this basilica offers stunning views of the city.</p>
+                <p><strong>Opening Hours:</strong> 6 AM - 10:30 PM</p>
+                <p><strong>Ticket Price:</strong> Free (entry to the dome is €6)</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="map">
+        <h2>Interactive Map</h2>
+        <div id="map-container"></div>
+    </section>
+
+    <section id="tips">
+        <h2>Local Tips</h2>
+        <h3>Food</h3>
+        <p>Don't miss trying a traditional croissant at a local bakery!</p>
+        <h3>Transportation</h3>
+        <p>The metro is the fastest way to get around the city. Consider getting a Paris Visite pass for unlimited travel for a set number of days.</p>
+        <h3>Culture</h3>
+        <p>Be sure to greet locals with a friendly "Bonjour!" and try to learn a few basic French phrases.</p>
+        <h3>Safety</h3>
+        <p>Keep an eye on your belongings, especially in crowded areas, to avoid pickpockets.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form" action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Explorer's Hub. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="Project4_script.js"></script>
+</body>
+</html>
